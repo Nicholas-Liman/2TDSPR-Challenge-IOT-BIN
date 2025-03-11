@@ -6,6 +6,8 @@ O dataset contém:
 * 14 Colunas
 * 3000 Linhas
 
+Cada linha do dataset representa um dia, e suas colunas guardam informações como ID e os habitos de higiene ligados a esse ID num dado dia.
+
 ## Data Set
 ### **Atributos**
 | Coluna                   | Descrição |
@@ -38,10 +40,13 @@ O dataset contém:
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## Exemplo de entrada
+### Exemplo de entrada
 novo_usuario = np.array([[3, 2, 1, 5]])  # 3 escovações, 2 fios dentais, 1 enxaguante, 5 dias seguidos
 
-## Exemplo de saída
+### Exemplo de saída
 92 [Plain number]
+
+### O servidor esta configurado para receber um json contendo apenas dados numéricos, deixando o pacote mais difícil de ser avaliado por bad actors.
+Exemplo do json de entrada: [3, 2, 1, 5] Ou seja é apenas um vetor simples.
 
 
