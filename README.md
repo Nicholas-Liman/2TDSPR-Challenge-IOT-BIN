@@ -6,6 +6,7 @@ O dataset contém:
 * 14 Colunas
 * 3000 Linhas
 
+## Data Set
 ### **Atributos**
 | Coluna                   | Descrição |
 |-------------------------|------------|
@@ -26,6 +27,14 @@ O dataset contém:
 | `streak_days`          | Quantidade de dias consecutivos seguindo um bom hábito |
 | `score`               | Nota atribuída ao usuário naquele dia |
 
+## Dados que o modelo realmente precisa para fazer a predição
+### **Entrada de Dados Esperada**
+| Feature           | Tipo  | Descrição |
+|-------------------|------|-----------|
+| `total_brushes`  | `int` (0-3) | Total de escovações no dia |
+| `total_floss`    | `int` (0-3) | Total de vezes que usou fio dental |
+| `total_mouthwash`| `int` (0-3) | Total de vezes que usou enxaguante bucal |
+| `streak_days`    | `int` (0+)  | Quantidade de dias consecutivos seguindo um bom hábito |
 
 Caso tenha sido utilizado 1, caso não tenha 0.
 Para criar um dataset que possa treinar o modelo de IA para avaliar a higiene bucal dos usuários, precisamos estruturar os dados de forma a representar corretamente os hábitos de escovação, a frequência e o uso do fio dental e enxaguante bucal ao longo do tempo.
