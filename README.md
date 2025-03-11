@@ -36,7 +36,12 @@ O dataset contém:
 | `total_mouthwash`| `int` (0-3) | Total de vezes que usou enxaguante bucal |
 | `streak_days`    | `int` (0+)  | Quantidade de dias consecutivos seguindo um bom hábito |
 
-Caso tenha sido utilizado 1, caso não tenha 0.
-Para criar um dataset que possa treinar o modelo de IA para avaliar a higiene bucal dos usuários, precisamos estruturar os dados de forma a representar corretamente os hábitos de escovação, a frequência e o uso do fio dental e enxaguante bucal ao longo do tempo.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## Exemplo de entrada
+novo_usuario = np.array([[3, 2, 1, 5]])  # 3 escovações, 2 fios dentais, 1 enxaguante, 5 dias seguidos
+
+## Exemplo de saída
+92 [Plain number]
 
 
